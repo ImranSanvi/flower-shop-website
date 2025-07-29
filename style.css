@@ -121,6 +121,7 @@ header, main{
     margin-top: 210px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 0px;
 }
 
 .badge{
@@ -150,6 +151,67 @@ header, main{
 .lover-sppech{
     font-weight: 400;
     font-size: 1.375rem;
+}
+
+/* style in latest section */
+.latest-deals{
+    margin-top: -150px;
+    text-align: center;
+}
+.latest-tittle{
+    font-weight: 700;
+    font-size: 3.125rem;
+}
+.latest-description{
+    font-weight: 400;
+    font-size: 1.375rem;
+}
+.latest-image{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 100px;
+    gap: 15px;
+}
+.latest-image-first{
+    display: flex;
+    flex-direction: column;
+    gap: 17.5px;
+}
+.latest-image img{
+    border-radius: 14px;
+    display: inline-block;
+}
+.image-wrapper{
+    position: relative;
+    
+}
+.overlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.overlay-text1{
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: white;
+    white-space: nowrap;
+}
+.overlay-btn1{
+    font-weight: 600;
+    font-size: 1rem;
+    color: white;
+}
+.overlay-text2{
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: white;
+    white-space: nowrap;
+}
+.overlay-btn2{
+    font-weight: 600;
+    font-size: 1.75rem;
+    color: white;
 }
 
 /* Responsive for mobile */
@@ -185,7 +247,14 @@ header, main{
         gap: 30px;
     }
 
+
     .plants-lover{
         grid-template-columns: repeat(1, 1fr);
+    }
+    .badge{
+        display: none;
+    }
+    .latest{
+        margin-top: 150px;
     }
 }
