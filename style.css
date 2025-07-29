@@ -10,15 +10,24 @@
 }
 
 /* Shared Style */
-
+header, main{
+    padding: 0px 150px;
+}
 .display-flex{
     display: flex;
+}
+.primary-color{
+    color: #E95A08;
+}
+.dark2{
+    color: rgba(0, 0, 0, 0.5);
 }
 
 /* style in Header */
 
-.navbar{
-    margin: 30px 150px;
+.navbar{ 
+    margin-top: 50px; 
+    margin-bottom: 100px;
     max-width: 1140px;
     justify-content: space-between;
 }
@@ -41,4 +50,40 @@
 .nav-item-4 a{
     font-weight: 500px;
     color: #000000;
+}
+
+/* style in banner */
+.banner{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.banner-tittle{
+    font-weight: 700;
+    font-size: 4.05rem;
+}
+.banner-description{
+    font-weight: 400;
+    font-size: 1.375rem;
+}
+
+/* Responsive for mobile */
+
+@media screen and (max-width: 576px){
+    header, main{
+        padding: 20px;
+    }
+    .nav-item-1, .nav-item-2, .nav-item-3{
+        display: none;
+    }
+
+    .banner{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .banner-image{
+        order: -1;
+    }
+    .banner-tittle{
+        text-align: left;
+    }
 }
