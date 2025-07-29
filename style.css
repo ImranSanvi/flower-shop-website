@@ -9,8 +9,10 @@
     "wdth" 100;
 }
 
+
 /* Shared Style */
 header, main{
+    margin: 0 auto;
     padding: 0px 150px;
     max-width: 1140px;
 }
@@ -31,6 +33,9 @@ header, main{
 }
 .dark3{
     color: #111111;
+}
+.Gray{
+    color: rgba(107, 114, 128, 1);
 }
 
 /* style in Header */
@@ -179,7 +184,6 @@ header, main{
 }
 .latest-image img{
     border-radius: 14px;
-    display: inline-block;
 }
 .image-wrapper{
     position: relative;
@@ -214,11 +218,78 @@ header, main{
     color: white;
 }
 
+/* Style in footer */
+
+/* Style for join */
+.join {
+    width: 1440px;
+    height: 533px;
+    width: 100%;
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    
+    background-image: url('assets/news-letter-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.join-tittle{
+    font-weight: 700;
+    font-size: 3.125rem;
+    color: white;
+}
+.input-btn{
+    padding: 300px auto;
+}
+.input-btn input{
+    width: 644px;
+    height: 50px;
+}
+.input-btn button{
+    width: 186px;
+    color: white;
+    border: none;
+}
+
+/* style in footer lower part */
+.lower-part{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 50px 100px;
+    gap: 100px;
+}
+.part-1-description{
+    font-weight: 400;
+    font-size: 1.375rem;
+}
+.lower-part-2, .lower-part-3{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+.lower-part-2 a, .lower-part-3 a{
+    text-decoration: none;
+}
+.lower-part-4{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+}
+.lower-part-4 img{
+    width: 36px;
+    height: 36px;
+}
+
+
 /* Responsive for mobile */
 
 @media screen and (max-width: 576px){
-    header, main{
-        padding: 20px;
+    header, main, footer{
+        padding: 0 20px;
     }
     .nav-item-1, .nav-item-2, .nav-item-3{
         display: none;
@@ -242,7 +313,6 @@ header, main{
         align-items: center;
     }
     .cards-container{
-        display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
     }
@@ -257,4 +327,30 @@ header, main{
     .latest{
         margin-top: 150px;
     }
+    .latest-image-first{
+        flex-direction: column;
+    }
+    .latest-image {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+  .image-wrapper{
+    width: 100%;
+  }
+  .image-wrapper img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .input-btn{
+    width: 80%;
+  }
+
+  .lower-part{
+    margin: 0px;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: left;
+  }
+
 }
