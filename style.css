@@ -289,6 +289,7 @@ header, main{
 
 @media screen and (max-width: 576px){
     header, main, footer{
+        width: 576px;
         padding: 0 20px;
     }
     .nav-item-1, .nav-item-2, .nav-item-3{
@@ -343,14 +344,28 @@ header, main{
     width: 100%;
     height: auto;
   }
-  .input-btn{
+  .background{
+    margin: 0;
+    padding: 0;
+  }
+
+  .join{
+    margin: 20px 0px;
+    padding: 0px 0px;
+    width: 616px;
+  }
+  .join > .input-btn{
     width: 80%;
   }
 
   .lower-part{
-    margin: 0px;
+    margin: 30px 0px;
     grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
     justify-content: left;
+  }
+  .lower-part-2, .lower-part-3{
+    gap: 30px;
   }
 
 }
