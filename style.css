@@ -107,10 +107,49 @@ header, main{
 .card-button{
     width: 270px;
     height: 50px;
+    border: none;
+}
+.card-button a{
+    text-decoration: none;
     font-weight: 500;
     font-size: 1rem;
     color: white;
-    border: none;
+}
+
+/* style in plants lover */
+.plants-lover{
+    margin-top: 210px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.badge{
+    width: 286px;
+    height: 286px;
+    margin-left: 350px;
+    transform: translateY(-750px);
+}
+
+.lover-tittle{
+    font-weight: 700;
+    font-size: 3.125rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-top: 30px;
+}
+.lover-list{
+    padding-left: 50px;
+}
+.plnats-lover-description ul{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    color: rgba(0, 0, 0, 0.5);
+}
+.lover-sppech{
+    font-weight: 400;
+    font-size: 1.375rem;
 }
 
 /* Responsive for mobile */
@@ -144,5 +183,9 @@ header, main{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
+    }
+
+    .plants-lover{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
